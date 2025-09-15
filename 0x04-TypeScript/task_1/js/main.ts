@@ -41,11 +41,13 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-const printTeacher: printTeacherFunction = function (firstName: string, lastName: string): string {
-  return firstName.charAt(0) + '. ' + lastName;
-};
+// const printTeacher: printTeacherFunction = function (firstName: string, lastName: string): string {
+//   return firstName.charAt(0) + '. ' + lastName;
+// };
 
-
+function printTeacher(firstName,lastName){
+  return `${firstName}. ${lastName}`
+}
 
 console.log(printTeacher('John', 'Doe')); // -> J. Doe
 
