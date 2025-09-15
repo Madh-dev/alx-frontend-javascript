@@ -63,7 +63,7 @@ new (firstName: string, lastName: string): StudentInterface;
 }
 
 
-class StudentClass implements StudentInterface {
+class StudentClass {
 constructor(public firstName: string, public lastName: string) {}
 
 
@@ -73,7 +73,7 @@ return 'Currently working';
 
 
 displayName(): string {
-return this.firstName;
+return this.lastName;
 }
 }
 
