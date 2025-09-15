@@ -39,10 +39,10 @@ return 'Getting to work';
 
 
 function createEmployee(salary: number | string): Director | Teacher {
-if (typeof salary === 'number' && salary <= 499) {
-return new Teacher();
-}
+if (typeof salary === 'number' && salary >= 500) {
 return new Director();
+}
+return new Teacher();
 }
 
 
