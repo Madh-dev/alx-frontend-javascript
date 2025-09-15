@@ -38,13 +38,13 @@ numberOfReports: 17,
 console.log(director1);
 
 interface printTeacherFunction {
-(firstName: string, lastName: string): string;
+  (firstName: string, lastName: string): string;
 }
-
 
 const printTeacher: printTeacherFunction = function (firstName: string, lastName: string): string {
   return firstName.charAt(0) + '. ' + lastName;
 };
+
 
 
 console.log(printTeacher('John', 'Doe')); // -> J. Doe
@@ -63,7 +63,7 @@ new (firstName: string, lastName: string): StudentInterface;
 }
 
 
-class StudentClass {
+class StudentClass implements StudentInterface{
 constructor(public firstName: string, public lastName: string) {}
 
 
