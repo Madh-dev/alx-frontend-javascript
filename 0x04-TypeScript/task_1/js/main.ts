@@ -73,7 +73,7 @@ return 'Currently working';
 
 
 displayName(): string {
-return this.lastName;
+return this.firstName;
 }
 }
 
