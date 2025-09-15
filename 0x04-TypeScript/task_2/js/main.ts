@@ -38,12 +38,20 @@ return 'Getting to work';
 }
 
 
+// function createEmployee(salary: number | string): Director | Teacher {
+// if (typeof salary === 'number' && salary >= 500) {
+// return new Director();
+// }
+// return new Teacher();
+// }
+
 function createEmployee(salary: number | string): Director | Teacher {
-if (typeof salary === 'number' && salary >= 500) {
-return new Director();
+  if (typeof salary === 'number' && salary >= 500) {
+    return new Director();
+  }
+  return new Teacher();
 }
-return new Teacher();
-}
+
 
 
 console.log(createEmployee(200));
